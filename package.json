@@ -47,7 +47,8 @@
   },
   "publishConfig": {
     "access": "public",
-    "provenance": true
+    "registry": "https://registry.npmjs.org/",
+    "provenance": false
   },
   "release": {
     "extends": "semantic-release-monorepo",
