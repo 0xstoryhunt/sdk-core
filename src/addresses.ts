@@ -33,7 +33,7 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x2344C1448E528dD0e4094c92966A7f68f45aa4e4',
   multicallAddress: '0x532FB9e7bf3030194Fcd72d42184e51281D59DeB',
   quoterAddress: '0x73F7a3D6A58F52aa0D7B7281E2F2975cAa96B081',
-  nonfungiblePositionManagerAddress: '0x858463Aa07756946c0E0B8e632BE4281f8E53cA4',
+  nonfungiblePositionManagerAddress: '0x858463Aa07756946c0E0B8e632BE4281f8E53cA4'
 }
 
 const ODYSSEY_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
@@ -47,21 +47,21 @@ export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
     memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].v3CoreFactoryAddress
     return memo
-  }, {}),
+  }, {})
 }
 
 export const MULTICALL_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
     memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].multicallAddress
     return memo
-  }, {}),
+  }, {})
 }
 
 export const QUOTER_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
     memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].quoterAddress
     return memo
-  }, {}),
+  }, {})
 }
 
 export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
@@ -71,7 +71,7 @@ export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
       memo[chainId] = nonfungiblePositionManagerAddress
     }
     return memo
-  }, {}),
+  }, {})
 }
 
 export const TICK_LENS_ADDRESSES: AddressMap = {
@@ -81,7 +81,7 @@ export const TICK_LENS_ADDRESSES: AddressMap = {
       memo[chainId] = tickLensAddress
     }
     return memo
-  }, {}),
+  }, {})
 }
 
 export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
