@@ -6,7 +6,6 @@ type ChainAddresses = {
   v3CoreFactoryAddress: string
   multicallAddress: string
   quoterAddress: string
-  v3MigratorAddress?: string
   nonfungiblePositionManagerAddress?: string
   tickLensAddress?: string
   swapRouter02Address?: string
@@ -34,8 +33,6 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x2344C1448E528dD0e4094c92966A7f68f45aa4e4',
   multicallAddress: '0x532FB9e7bf3030194Fcd72d42184e51281D59DeB',
   quoterAddress: '0x73F7a3D6A58F52aa0D7B7281E2F2975cAa96B081',
-  //@:TODO: Add the correct address
-  v3MigratorAddress: '0xA5644E29708357803b5A882D272c41cC0dF92B34',
   nonfungiblePositionManagerAddress: '0x858463Aa07756946c0E0B8e632BE4281f8E53cA4',
 }
 
@@ -49,16 +46,6 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
 export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
     memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].v3CoreFactoryAddress
-    return memo
-  }, {}),
-}
-
-export const V3_MIGRATOR_ADDRESSES: AddressMap = {
-  ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
-    const v3MigratorAddress = CHAIN_TO_ADDRESSES_MAP[chainId].v3MigratorAddress
-    if (v3MigratorAddress) {
-      memo[chainId] = v3MigratorAddress
-    }
     return memo
   }, {}),
 }
