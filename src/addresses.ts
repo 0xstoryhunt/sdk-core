@@ -22,18 +22,18 @@ type ChainAddresses = {
 export const DEFAULT_NETWORKS = [ChainId.ODYSSEY]
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
-  [ChainId.ODYSSEY]: '0x4773d28a8488eaB17907324455C8F8D9ea48A921'
+  [ChainId.ODYSSEY]: '0x...'
 }
 export const V2_ROUTER_ADDRESSES: AddressMap = {
-  [ChainId.ODYSSEY]: '0x144C047f7Be22EAB4BF78c77C1038b86923693CD'
+  [ChainId.ODYSSEY]: '0x...'
 }
 
 // Networks that share most of the same addresses i.e. Odyssey
 const DEFAULT_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x2344C1448E528dD0e4094c92966A7f68f45aa4e4',
-  multicallAddress: '0x532FB9e7bf3030194Fcd72d42184e51281D59DeB',
-  quoterAddress: '0x73F7a3D6A58F52aa0D7B7281E2F2975cAa96B081',
-  nonfungiblePositionManagerAddress: '0x858463Aa07756946c0E0B8e632BE4281f8E53cA4'
+  v3CoreFactoryAddress: '0x354631ac8fdb2d5d66Ca5809b78BCE9dda1b7973',
+  multicallAddress: '0xf565c9Dd6CDDAAa6712d7aA42773bA1AD347B01c',
+  quoterAddress: '0xBc3E9443D24A2a2C982586AbD5b0a648a4df6a79',
+  nonfungiblePositionManagerAddress: '0x9aF296D15143B51fBe631cfe6b43969d0f63F1db'
 }
 
 const ODYSSEY_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
