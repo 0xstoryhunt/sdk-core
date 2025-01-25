@@ -1,4 +1,5 @@
 import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from './chains'
+import DEFAULT_ADDRESS_LIST from '@storyhunt/default-list/build/storyhunt-default.constantlist.json';
 
 type AddressMap = { [chainId: number]: string }
 
@@ -30,10 +31,10 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
 
 // Networks that share most of the same addresses i.e. Odyssey
 const DEFAULT_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x354631ac8fdb2d5d66Ca5809b78BCE9dda1b7973',
-  multicallAddress: '0xf565c9Dd6CDDAAa6712d7aA42773bA1AD347B01c',
-  quoterAddress: '0xBc3E9443D24A2a2C982586AbD5b0a648a4df6a79',
-  nonfungiblePositionManagerAddress: '0x9aF296D15143B51fBe631cfe6b43969d0f63F1db'
+  v3CoreFactoryAddress: DEFAULT_ADDRESS_LIST.constants[ChainId.ODYSSEY].V3_FACTORY_CONTRACT.address,
+  multicallAddress: DEFAULT_ADDRESS_LIST.constants[ChainId.ODYSSEY].MULTICALL2_ADDRESS.address,
+  quoterAddress: DEFAULT_ADDRESS_LIST.constants[ChainId.ODYSSEY].QUOTERV2_ADDRESS.address,
+  nonfungiblePositionManagerAddress: DEFAULT_ADDRESS_LIST.constants[ChainId.ODYSSEY].NFT_POSITION_MANAGER_ADDRESS.address
 }
 
 const ODYSSEY_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
