@@ -1253,10 +1253,10 @@
   dependencies:
     type-detect "4.0.8"
 
-"@storyhunt/default-list@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@storyhunt/default-list/-/default-list-1.0.3.tgz#27f235ecc688ab4d7ec3c13eaf331bef21f4cd9e"
-  integrity sha512-0f+Xi4ImA/OBMNI/hAM5qGxgeOYvP2DEdhS23N95/9CyiCFAdlqQVwuaTcrgv/os5z6kAk6367jEHxcHPZ5SYQ==
+"@storyhunt/default-list@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@storyhunt/default-list/-/default-list-1.0.5.tgz#d535547c98f714f421c3b8bb7762532a590ae8d8"
+  integrity sha512-MMa9ey4HJicsDlAt4n6YFgAc3xvCMRawcFdfXl6VvaVRgWMxP/zm0wmJ8w1jG5rvm57sPE4Dh3ZF/RAb1tFLWQ==
 
 "@types/babel__core@^7.1.7":
   version "7.20.5"
