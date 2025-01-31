@@ -1,5 +1,6 @@
 export enum ChainId {
-  ODYSSEY = 1516
+  ODYSSEY = 1516,
+  STORY = 1513
 }
 
 export const SUPPORTED_CHAINS = [ChainId.ODYSSEY] as const
