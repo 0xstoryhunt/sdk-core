@@ -1,5 +1,5 @@
 export enum ChainId {
-  STORY = 1513,
+  STORY = 1514,
   ODYSSEY = 1516,
   AENEID = 1315
 }
@@ -15,7 +15,7 @@ export enum NativeCurrencyName {
 
 export const ID_TO_CHAIN_ID = (id: number): ChainId => {
   switch (id) {
-    case 1513:
+    case 1514:
       return ChainId.STORY;
     case 1516:
       return ChainId.ODYSSEY;
@@ -34,7 +34,7 @@ export enum ChainName {
 
 export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
   switch (id) {
-    case 1513:
+    case 1514:
       return ChainName.STORY;
     case 1516:
       return ChainName.ODYSSEY;
